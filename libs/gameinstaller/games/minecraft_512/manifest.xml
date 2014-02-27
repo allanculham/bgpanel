@@ -8,7 +8,7 @@ Last Update: 09/08/2013
 
 <!-- Game Manifest -->
 <game>
-	<name>minecraft</name>
+	<name>minecraft_512</name>
 
 	<actions>
 		<!-- Make Game Repository -->
@@ -24,13 +24,15 @@ Last Update: 09/08/2013
 			<!-- Copy Game Server Files -->
 			<rsync_c></rsync_c>
 			<chmodx>spigot.jar</chmodx>
+			<chmodx>start</chmodx>
 		</installgame>
 
 		<!-- Update Game Server From Game Repository -->
 		<updategame>
 			<!-- Update Game Server Files -->
-			<rsync_u>server.properties</rsync_u>
+			<rsync_u>start, server.template, server.template, server.properties</rsync_u>
 			<chmodx>spigot.jar</chmodx>
+			<chmodx>start</chmodx>
 		</updategame>
 	</actions>
 </game>

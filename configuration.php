@@ -12,13 +12,13 @@
 	define('DBHOST', 'localhost');
 
 	// DBNAME is the MySQL Database Name
-	define('DBNAME', 'brightgamepanel');
+	define('DBNAME', 'minecraft');
 
 	// DBUSER is the MySQL Database Username
-	define('DBUSER', 'root');
+	define('DBUSER', 'minecraft');
 
 	// DBPASSWORD is the MySQL Database Password
-	define('DBPASSWORD', '');
+	define('DBPASSWORD', 'letmein1234');
 
 	// DBPREFIX is the MySQL Table Prefix
 	define('DBPREFIX', 'bgp_');

@@ -99,11 +99,11 @@ if (($page == 'scriptconsole') || ($page == 'utilitiesrcontool'))
 			<div class="navbar-inner">
 				<div class="container-fluid">
 					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-						<span class="icon-bar"></span>
+						<span class="icon-bar">hhh</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</a>
-					<a class="brand" href="#">Bright Game Panel</a>
+					<a class="brand" href="#">The Miners</a>
 <?php
 
 /**
@@ -185,9 +185,11 @@ if ($page != 'login')
 
 
 ?>
-									<li class="divider"></li>
+<!--
+									<li class="divider"></li>							
 									<li class="nav-header"><?php echo T_('Voice Servers'); ?></li>
-								</ul>
+-->
+									</ul>
 							</li>
 							<li class="dropdown <?php
 	if ($tab == 4)
@@ -270,17 +272,23 @@ if ($page != 'login')
 									</li>
 								</ul>
 							</li>
+							<li <?php if ($tab == 5){echo "class=\"active\"";}?>>
+								<a href="tickets.php"><i class="icon-envelope icon-white"></i>&nbsp;Tickets</a>
+							</li>
 						</ul>
+						
 						<ul class="nav pull-right">
-							<li>
-								<a href="#" id="clock" rel="tooltip" title="" data-original-title="<?php echo date('l | F j, Y | H:i'); ?>"><i class="icon-time icon-white"></i></a>
-							</li>
-							<li>
-								<a href="#myBody" id="gototop" rel="tooltip" title="Back to Top"><i class="icon-arrow-up icon-white"></i></a>
-							</li>
+						
 							<li>
 								<a href="myaccount.php" id="me" rel="tooltip" title="<?php echo T_('My Account'); ?>"><i class="icon-user icon-white"></i></a>
 							</li>
+							<!--
+							<li class="active">
+								<a href="myaccount.php" id="me" rel="tooltip" title="<?php echo T_('My Account'); ?>">
+							    <?php echo '<span class="active">'.htmlspecialchars($rows['firstname'], ENT_QUOTES).' '.htmlspecialchars($rows['lastname'], ENT_QUOTES).'</span>'; ?>							
+								</a>
+							</li>
+							-->
 							<li style="padding-right: 8px;">
 								<a href="process.php?task=logout" id="logout" rel="tooltip" title="<?php echo T_('Sign Out'); ?>"><i class="icon-off icon-white"></i></a>
 							</li>
@@ -309,7 +317,7 @@ if (isset($isSummary))
 	}
 	else // Clients, Administrators & MyAccount
 	{
-		echo htmlspecialchars($rows['firstname'], ENT_QUOTES).' '.htmlspecialchars($rows['lastname'], ENT_QUOTES);
+		
 	}
 }
 

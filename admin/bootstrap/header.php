@@ -104,7 +104,7 @@ if (($page == 'scriptconsole') || ($page == 'utilitiesrcontool'))
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</a>
-					<a class="brand" href="#">Bright Game Panel</a>
+					<a class="brand" href="#">The Miners</a>
 <?php
 
 /**
@@ -316,6 +316,9 @@ if ($page != 'login')
 									<li><a tabindex="-1" href="configcron.php"><i class="icon-info-sign <?php echo formatIcon(); ?>"></i>&nbsp;<?php echo T_('Cron Settings'); ?></a></li>
 								</ul>
 							</li>
+							<li <?php if ($tab == 5){echo "class=\"active\"";}?>>
+								<a href="tickets.php"><i class="icon-envelope icon-white"></i>&nbsp;Tickets</a>
+							</li>
 						</ul>
 						<ul class="nav pull-right">
 <?php
@@ -348,12 +351,6 @@ if ($page != 'login')
 	}
 
 ?>
-							<li>
-								<a href="#" id="clock" rel="tooltip" title="<?php echo date('l | F j, Y | H:i'); ?>"><i class="icon-time icon-white"></i></a>
-							</li>
-							<li>
-								<a href="#myBody" id="gototop" rel="tooltip" title="Back to Top"><i class="icon-arrow-up icon-white"></i></a>
-							</li>
 							<li>
 								<a href="myaccount.php" id="me" rel="tooltip" title="<?php echo T_('My Account'); ?>"><i class="icon-user icon-white"></i></a>
 							</li>
